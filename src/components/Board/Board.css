@@ -1,0 +1,61 @@
+.Board {
+  height: 100%;
+}
+
+.Board__output {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 112px;
+  z-index: 1;
+}
+
+.Board__output button[class*='MuiButtonBase-'].scanner__focused {
+  outline: 4px solid rgba(255, 0, 0, 1);
+}
+
+.Board__navbar {
+  position: fixed;
+  top: 112px;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.Board__edit-toolbar,
+.Board__communicator-toolbar {
+  position: fixed;
+  top: 160px;
+  right: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.Board__edit-toolbar {
+  top: 208px;
+}
+
+.is-locked .Board__edit-toolbar,
+.is-locked .Board__communicator-toolbar {
+  display: none;
+}
+
+.Board__tiles {
+  position: relative;
+  top: 160px;
+  height: calc(100% - 160px);
+  background: #fff;
+  direction: ltr; /* for grid */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Board__tiles .Grid {
+  margin-top: 96px;
+}
+
+.is-locked .Board__tiles .Grid {
+  margin-top: 0;
+}

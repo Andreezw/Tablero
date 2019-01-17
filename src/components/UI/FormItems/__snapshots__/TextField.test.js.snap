@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField tests default renderer 1`] = `
+<WithStyles(FormControl)
+  className=""
+  error={true}
+>
+  <TextField
+    error={true}
+    required={false}
+    select={false}
+    variant="standard"
+  />
+  <WithStyles(FormHelperText)>
+    myerror
+  </WithStyles(FormHelperText)>
+</WithStyles(FormControl)>
+`;

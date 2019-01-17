@@ -1,0 +1,51 @@
+.EditToolbar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 48px;
+  color: #fff;
+  background-color: #757575;
+  white-space: nowrap;
+}
+
+.EditToolbar__group {
+  display: flex;
+  flex: 1 1;
+}
+
+.EditToolbar__group--start {
+  justify-content: flex-start;
+}
+
+.EditToolbar__group--end {
+  order: 2;
+  justify-content: flex-end;
+}
+
+.EditToolbar .EditToolbar__Spinner {
+  color: white;
+  margin: 12px 0 0 12px;
+}
+
+.EditToolbar .EditToolbar__BoardTitle {
+  display: flex;
+  order: 2;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  font-size: 1.14rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.EditToolbar .EditToolbar__BoardTitle.logged-in {
+  cursor: pointer;
+}
+
+.EditToolbar--selecting {
+  background-color: #2196f3;
+}

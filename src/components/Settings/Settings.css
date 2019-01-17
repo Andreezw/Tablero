@@ -1,0 +1,12 @@
+.Settings__content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.Settings__section {
+  margin-bottom: 8px;
+}
+
+.Settings__section--secondaryAction {
+  padding-right: 1.5rem;
+}
